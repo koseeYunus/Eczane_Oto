@@ -243,7 +243,6 @@ namespace Eczane_Oto
                 toplamTutar = toplamTutar + Decimal.Parse(gridView1.GetRowCellValue(i, gridView1.Columns["TUTAR"]).ToString());
             }
 
-
             try
             {
                 SqlCommand guncelleFatura = new SqlCommand("Update FATURA_BILGI set FAT_TUTAR=@G1 Where FAT_BIL_ID=@G2", bgl.baglanti());
